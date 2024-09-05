@@ -772,6 +772,7 @@ section.projects .section-heading {
     #menu-toggle,
     #menu-close {
         display: inline-block;
+        background-color: #ccc;
     }    
 
     .menu {        
@@ -830,4 +831,15 @@ section.projects .section-heading {
     .isotope-toolbar {
         margin-bottom: 20px;
     }
+    .my-skills .skills-content .column-right {
+        width: calc(80% - 30px);
+        margin-left: 80px;  
+    }
+    .projects .serv-content {
+        align-content : center;
+        height:fit-content;
+        width: calc(100% - 0px);
+        overflow: hidden;
+    }
+
 }
