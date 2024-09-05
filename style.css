@@ -294,21 +294,21 @@ html {
 
 /* Home */
 
+
 .home .home-content .row {
     display: flex;
     flex-wrap: wrap;
 }
-
 .home .column-left {
-    width: calc(60% - 5px);
+    width: 50%;
     padding-right: 20px;
 }
 
 .home .column-right {
-    width: calc(40% - 5px);
+    width: 50%;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
 .home .left-text h3 {
@@ -350,7 +350,7 @@ html {
 
 
 
-/* About-Buttons */
+/* About Me */
 .white-button {
     margin-top: 30px;
 }
@@ -395,20 +395,19 @@ button:hover {
 
 
 /* Skills */
-.my-skills .col-md-6 {
-    padding-left: 5px;
-    padding-right: 5px;
+.my-skills .skills-content .row {
+    display: flex;
+    flex-wrap: wrap;
 }
+
 .my-skills .skills-content .column-left {
     width: calc(80% - 5px);
-    margin-left: 80px;
-    margin-top: 10px;
-  }
-  .my-skills .skills-content .column-right {
-    width: calc(40% - 30px);
     
   }
-  
+  .my-skills .skills-content .column-right {
+    width: calc(50% - 30px);
+  }
+
   .my-skills .skills-content .left .text {
     font-size: 20px;
     font-weight: 600;
@@ -553,26 +552,30 @@ section.projects .section-heading {
 
 
 /* contact section styling */
-.contact .col-md-6 {
-    padding-left: 5px;
-    padding-right: 5px;
+.contact .contact-content .divide { 
+    display: flex;
+    flex-wrap: wrap;
 }
 
+.contact .col-md-6 {
+    width: 50%;
+}
+.contact .contact-content .left-text {
+    width: 85%;
+  }
+
   .contact .contact-content .column-left {
-    width: calc(60% - 5px);
+    background-color: #1a1c1b95 ;
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 25px;
     padding-bottom: 25px;
-    margin-top: 10px;
-    margin-left: 80px;
-    margin-right: 50px;
-    background-color: #1a1c1b95 ;
     border-radius: 8px;
+    margin-top: 10px;
   }
 
   .contact .contact-content .column-right {
-    width: calc(40% - 30px);
+    width: 50%;
   }
   
   .contact .contact-content .text {
@@ -592,7 +595,8 @@ section.projects .section-heading {
   
   .contact .contact-content .row {
     display: flex;
-    height: 65px;
+    flex-wrap: wrap;
+    height: 100%;
     align-items: justify;
     padding-bottom: 50px;
   }
@@ -831,15 +835,39 @@ section.projects .section-heading {
     .isotope-toolbar {
         margin-bottom: 20px;
     }
-    .my-skills .skills-content .column-right {
-        width: calc(80% - 30px);
-        margin-left: 80px;  
+
+    .home .column-left, 
+    .home .column-right {
+        width: 100%; /* Full width for each column */
+        padding: 0; /* Remove padding */
+        margin-bottom: 20px; /* Add space between sections */
     }
+    .home .column-right {
+        display: flex;
+        justify-content: center;
+    }
+
+    .my-skills .skills-content .column-right, .column-left {
+        width: 100%;
+        margin-top: 30px; 
+    }
+    
     .projects .serv-content {
-        align-content : center;
         height:fit-content;
-        width: calc(100% - 0px);
+        width: 100%;
         overflow: hidden;
+    }
+
+    .contact .row {
+        height:fit-content;
+        width: 100%;
+        overflow: hidden;
+    }
+    .contact .contact-content .column-right, 
+    .contact .contact-content .col-md-6,
+    .contact .contact-content .col-md-6 .left-text {
+        width: 100%;
+        margin-top: 30px; 
     }
 
 }
